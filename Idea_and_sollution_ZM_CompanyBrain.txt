@@ -1,0 +1,13 @@
+Problem/Opportunity Statement (100w)
+AI agents at work don't know company context. Ask one to draft a proposal or reply to a client, and it has no idea about the relationship history, risks already flagged, or promises made last call — so it produces generic, unusable output. This is the same root problem organizations already have with humans: decisions made in meetings are forgotten in months, commitments made in emails go untracked and undone, and when someone leaves, their context leaves too. This happens in every company, every day — teams repeat the same mistakes because nobody remembers the last one. It's not a tooling problem, it's a memory problem. Companies have no reliable system to capture, store, and recall what they collectively know — so neither people nor AI agents can act on it.
+
+Idea/Solution (100w)
+Company Brain is a memory and intelligence layer for organizations. It automatically captures meetings, emails, and decisions, understands what happened, and stores it as structured knowledge — facts, commitments, decisions, and lessons learned. It then delivers the right piece of knowledge to the right person at the right time, and gives AI agents real company context so they stop producing generic output. Unlike search tools (which need you to know what to look for) or chatbots (which forget everything), Company Brain remembers permanently and proactively surfaces what matters, so nothing important is ever lost again.
+
+Why important / passionate (100w)
+AI agents are becoming core to how companies work, but right now they operate blind — no memory of past decisions, commitments, or context, so they guess and produce generic output. Every organization we've studied has this problem — it's universal and invisible until something breaks: a lost client relationship, a repeated mistake, a decision nobody can explain. This gap will only grow as more work shifts to agents: AI agents without company memory just guess. It's the same organizational memory problem companies already have with people, just more urgent now: fix the memory layer, and every AI agent and every tool built on top of it instantly gets better. We're passionate about this because it's foundational — not another chatbot, but the missing memory that makes AI actually useful inside a company.
+
+SDG alignment (50w)
+SDG 9 (Industry, Innovation and Infrastructure) — building intelligent digital infrastructure for organizations. SDG 8 (Decent Work and Economic Growth) — reducing wasted effort and repeated mistakes, improving productivity. SDG 4 (Quality Education) — capturing institutional knowledge helps organizational learning and skill transfer.
+
+Sector: Technology / IT / Software (or "AI & Enterprise Software" if that option exists).
