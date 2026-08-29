@@ -140,6 +140,24 @@ artifacts (change log, coverage check, consistency check,
 recognizability sheet) — is preserved in
 `/archive/grounding-phase-2026-07/`, not discarded.
 
+**"Frozen" means internally complete, not current — re-verify before
+building.** "Frozen" above describes the state of the Theoretical
+Grounding Phase itself: the eight documents are internally consistent
+and finished as a *grounding* exercise, dated July 2026. It does not
+mean they're still an accurate, ready-to-build spec today — they were
+written months before Technical Architecture actually starts, and the
+plan and market context have moved since. Treat the canonical set as a
+**reference starting point**, not a final document to build directly
+from. Before any Technical Architecture work begins, each canonical
+document's real-world claims need re-verification against the current
+goal and market — properly re-scoped, done for real rather than
+rubber-stamped as still true. gstack's own planning skills
+(`plan-eng-review` for architecture-level re-scoping, `office-hours`
+for anything that's genuinely shifted enough to need fresh validation)
+are the right tool for that re-verification pass — this project
+already runs them, use them rather than assuming the grounding work
+still holds as written.
+
 ---
 
 ## Standing Rule — Document Resolution Authority
