@@ -126,10 +126,13 @@ Supporting reference (not canonical, but cited from the canonical
 set): `OKF_Adoption_Mapping.md`, `One_Pager.md`,
 `Company_Brain_Foundational_Reasoning_V4.md` (the CTO/LLM-context
 reasoning trail — **if this conflicts with a canonical document, the
-canonical document wins**; append-only, never edit existing chapters),
-`marked_for_technical_architecture.md` (parking-lot items deferred to
-the next phase). See `README.md` for the full document index with
-per-document dependency order.
+canonical document wins**; append-only, never edit existing chapters).
+`README.md` also references a `marked_for_technical_architecture.md`
+parking-lot file for items deferred to the next phase — **that file
+does not exist in the repo yet** (verified, not assumed); treat any
+reference to it as aspirational until it's actually created. See
+`README.md` for the full document index with per-document dependency
+order.
 
 Full history of this phase — every intermediate draft, the
 pre-grounding original document versions, and the team-review
