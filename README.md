@@ -4,6 +4,10 @@ Canonical architecture documentation for "Company Brain" (ZeroManual, internal).
 
 Status: **Theoretical Grounding Phase frozen, July 2026.** Eight canonical documents, listed below in dependency order. Each of the six architecture documents is grounded in named theory or industry standards, stated theory-first with an explicit implement/extend/diverge relationship — see `Company_Brain_Theoretical_Foundations_v1.md` for the full field-by-field grounding.
 
+## Working in this repo
+
+This is the document index. For governance, operating instructions, the memory system, and standing rules, see [`CLAUDE.md`](CLAUDE.md) — the actual entry point for anyone (human or AI) doing work here. In short: [gstack](https://github.com/garrytan/gstack) is required for AI-assisted work (enforced by a `PreToolUse` hook that blocks Skill-tool use if it's not found installed — see `CLAUDE.md`'s gstack section), and this project runs on the [`gstack-pilot`](https://github.com/muhaiminul00/gstack-pilot) + [`project-memory`](https://github.com/muhaiminul00/project-memory) plugins.
+
 ## Canonical Documents
 
 | # | Document | Version | Defines |
@@ -23,7 +27,7 @@ Status: **Theoretical Grounding Phase frozen, July 2026.** Eight canonical docum
 - [`One_Pager.md`](One_Pager.md) — "Company Brain on One Page," a VSM-based summary for a non-technical reader (exec, investor, new hire)
 - [`Company_Brain_Foundational_Reasoning_V4.md`](Company_Brain_Foundational_Reasoning_V4.md) — **not canonical, reference only.** The CTO/LLM-context reasoning trail behind every canonical document: why each exists, in what order, and what each fixed in the one before it. If this document conflicts with a canonical document, the canonical document wins. Append-only — never edit existing chapters.
 - [`Company_Brain_Theoretical_Grounding_Master_Plan.md`](Company_Brain_Theoretical_Grounding_Master_Plan.md) — the task list, touch-map, and bibliography that scoped the now-complete grounding phase. Historical record of how the eight documents above reached their current state.
-- [`marked_for_technical_architecture.md`](marked_for_technical_architecture.md) — parking-lot items explicitly deferred to the not-yet-started Technical Architecture phase.
+- `marked_for_technical_architecture.md` — **does not exist yet** (verified — not a real file in this repo, despite being referenced as one previously). Intended purpose: parking-lot items explicitly deferred to the not-yet-started Technical Architecture phase. Create it when that phase actually starts, or remove this line if the intent changes.
 
 ## Archive
 
