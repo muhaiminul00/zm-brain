@@ -11,5 +11,25 @@
         ]
       }
     ]
+  },
+  "enabledPlugins": {
+    "gstack-pilot@gstack-pilot": true,
+    "project-memory@project-memory": true
+  },
+  "extraKnownMarketplaces": {
+    "gstack-pilot": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/muhaiminul00/gstack-pilot.git"
+      },
+      "autoUpdate": true
+    },
+    "project-memory": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/muhaiminul00/project-memory.git"
+      },
+      "autoUpdate": true
+    }
   }
 }
