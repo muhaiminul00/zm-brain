@@ -1,3 +1,50 @@
+
+
+<!-- project-memory-plugin:v1 -->
+## Project Memory (project-memory plugin)
+
+This project has the `project-memory` plugin installed, providing a
+three-layer memory model inspired by the LLM-maintained-wiki pattern in
+Andrej Karpathy's gist
+(https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) - an
+independent implementation of that pattern, not a fork of any of his code.
+Everything lives under `.project-memory/` (same convention as the
+`remember` plugin's `.remember/`), and every file the plugin scaffolds
+says so in its own header - this is plugin-managed structure, not ad hoc
+project documentation:
+
+- `.project-memory/PROJECT_STATE.md` - current truth only, overwritten
+  each session.
+- `.project-memory/Wiki/*.md` - durable facts and decisions, organized
+  by topic, edited in place as understanding changes, cross-referenced
+  from `.project-memory/Wiki/index.md`.
+- `.project-memory/Wiki/log.md` - append-only chronological record,
+  read only on request.
+
+Promotion Rule (self-maintaining, do not wait to be asked): a durable
+fact or decision -> write/update a Wiki page now; a status-only update
+-> overwrite `.project-memory/PROJECT_STATE.md` now; the full narrative
+of how something happened -> append `.project-memory/Wiki/log.md` now.
+Do this as part of normal work, not just when a human explicitly asks
+for a memory update.
+
+Commands (manual/explicit fallback, not the primary path): `/memory-log`
+(force a log entry), `/memory-promote` (force a Wiki write + index
+cross-reference), `/memory-lint` (health-check the Wiki for
+contradictions/orphans/stale claims), `/memory-init` (re-run/repair the
+scaffold).
+
+Fill in the specifics that make this useful for THIS project:
+- If this project already tracks state/decisions under different file
+  names, say so here and point at them instead of the defaults above.
+- Name any topic folders under `Wiki/` this project should use
+  (e.g. `credentials/`, `infra/`, `decisions/`).
+
+Recommended companion: pair this with the `role-modes` plugin
+(https://github.com/muhaiminul00/role-modes) for the advisor/
+commander/execute mode system that reads and writes this memory.
+<!-- project-memory-plugin:v1 -->
+
 <!-- gstack-pilot-plugin:v1 -->
 ## Role Modes + gstack Bridge (gstack-pilot plugin)
 
@@ -53,48 +100,3 @@ Fill in the specifics that make this useful for THIS project:
 - Env/tooling convention (if any) - e.g. venv-only installs + a tracked
   requirements file so teammates share a synced environment via GitHub, or none.
 <!-- gstack-pilot-plugin:v1 -->
-
-<!-- project-memory-plugin:v1 -->
-## Project Memory (project-memory plugin)
-
-This project has the `project-memory` plugin installed, providing a
-three-layer memory model inspired by the LLM-maintained-wiki pattern in
-Andrej Karpathy's gist
-(https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) - an
-independent implementation of that pattern, not a fork of any of his code.
-Everything lives under `.project-memory/` (same convention as the
-`remember` plugin's `.remember/`), and every file the plugin scaffolds
-says so in its own header - this is plugin-managed structure, not ad hoc
-project documentation:
-
-- `.project-memory/PROJECT_STATE.md` - current truth only, overwritten
-  each session.
-- `.project-memory/Wiki/*.md` - durable facts and decisions, organized
-  by topic, edited in place as understanding changes, cross-referenced
-  from `.project-memory/Wiki/index.md`.
-- `.project-memory/Wiki/log.md` - append-only chronological record,
-  read only on request.
-
-Promotion Rule (self-maintaining, do not wait to be asked): a durable
-fact or decision -> write/update a Wiki page now; a status-only update
--> overwrite `.project-memory/PROJECT_STATE.md` now; the full narrative
-of how something happened -> append `.project-memory/Wiki/log.md` now.
-Do this as part of normal work, not just when a human explicitly asks
-for a memory update.
-
-Commands (manual/explicit fallback, not the primary path): `/memory-log`
-(force a log entry), `/memory-promote` (force a Wiki write + index
-cross-reference), `/memory-lint` (health-check the Wiki for
-contradictions/orphans/stale claims), `/memory-init` (re-run/repair the
-scaffold).
-
-Fill in the specifics that make this useful for THIS project:
-- If this project already tracks state/decisions under different file
-  names, say so here and point at them instead of the defaults above.
-- Name any topic folders under `Wiki/` this project should use
-  (e.g. `credentials/`, `infra/`, `decisions/`).
-
-Recommended companion: pair this with the `role-modes` plugin
-(https://github.com/muhaiminul00/role-modes) for the advisor/
-commander/execute mode system that reads and writes this memory.
-<!-- project-memory-plugin:v1 -->
