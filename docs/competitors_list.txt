@@ -1,0 +1,47 @@
+-->Source 1:
+The most direct competitors — Company Brain / Organizational Memory
+
+These are the companies I would put in the same competitive box as ZeroManual.
+
+Company	Product / Positioning	B2B / D2C	Competitive proximity
+Sentra	Organizational memory / Company Brain for teams + agents	B2B	🔴 Extremely high
+Hyper	Company Brain / self-driving business context	B2B	🔴 Extremely high
+GBrain	Open-source personal/company brain + agent context	B2B / D2C-ish	🔴 Extremely high
+Hyperspell	Enterprise context/memory infrastructure for agents	B2B	🔴 Extremely high
+Cerenovus	Company Brain / organizational intelligence	B2B	🔴 High
+Savant	Company Brain / AI business context	B2B	🔴 High
+Aura	Business Memory OS	B2B	🔴 High
+Webair AI	Company/company knowledge brain	B2B	🟠 High
+Cognee	Knowledge/memory infrastructure for agents	B2B / developer	🟠 High
+Lore	AI company knowledge/context + agents	B2B	🟠 High
+................
+
+--> Source 2:
+B2B / Org memory ("Company Brain" category) competitors:
+
+Hyper (YC) — ambient connector layer, Docs/Slack/Email/Calendar → any AI tool, custom eval suite
+Savant Labs (YC) — "operational memory layer," undocumented procedures/edge cases, decision-time context
+Memory Store (YC) — MCP-native, "Briefs" auto-updating living docs
+Cerenovus (YC) — markdown knowledge graph modeling company as system, closest to drift detection
+GBrain (OSS) — v0.30, single maintainer, page+graph retrieval, reference not fork
+Notion AI / Glean-style enterprise search-adjacent (broader knowledge mgmt, less "brain"-framed)
+
+D2C / Personal memory-sync competitors:
+
+Rewind AI → rebranded Limitless → acquired Meta → shut down Dec 19, 2025. Rewind AI rebranded to Limitless, was acquired by Meta, and the service shut down on December 19, 2025 (category cautionary tale — dead now, but validated demand) 
+rewind
+Second Brain – AI Memory (iOS app) — three-layer memory system, semantic search, memory strength via Ebbinghaus curve, people cards, iCloud sync, local-first, Claude API backend 
+apple
+SecondBrain (voice-first) — speak once and it remembers notes/calendar/follow-ups, memory shared across ChatGPT, Claude, other AI via MCP, encrypted per-user 
+secondbrainmemory
+Second Brain for AI (Cloudflare, OSS) — MCP continuity layer bridging Claude/ChatGPT/Cursor, hosted in user's own Cloudflare account, self-hosted infra layer 
+producthunt
+Supermemory — cross-tool MCP second brain, app + browser ext, OSS self-host free / cloud usage-based
+Mem0 — dev-focused memory API/infra, not consumer-facing (infra layer, not end-user product)
+Off Grid AI Desktop (OSS) — screen capture, on-device OCR, local second brain, cross-device sync coming 
+dev
+Reflect — E2E encrypted notes + local AI, privacy-first Apple ecosystem
+Mem.ai — no-folders AI self-org, quick capture, personal PKM
+Vellum — local hybrid retrieval, proactive pushes, self-hosted privacy-first
+Limitless Pendant (post-Rewind, now Meta-owned) — wearable capture, hardware-anchored, uncertain future post-acquisition
+Plaud Pin — hardware recorder, meetings/interviews niche
