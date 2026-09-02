@@ -21,14 +21,19 @@ organizational-memory problem companies already have with people,
 now more urgent because more work is shifting to agents that guess
 without it.
 
-**Current stage, stated plainly:** conceptual architecture only — no
-technical implementation exists yet, intentionally paused. The
-Theoretical Grounding Phase is complete and frozen (July 2026): eight
-canonical documents now define the system, each grounded in named
-theory/industry standards with an explicit implement/extend/diverge
-relationship stated per source, not just cited. Per Foundational
-Reasoning V4's own roadmap, **Technical Architecture is next, not yet
-started** — do not treat this project as further along than that.
+**Current stage, stated plainly:** the Theoretical Grounding Phase is
+complete and frozen (July 2026): eight canonical documents now define
+the system, each grounded in named theory/industry standards with an
+explicit implement/extend/diverge relationship stated per source, not
+just cited. **Technical Architecture / Building started 2026-09-02**
+— scope and v1 architecture are locked (see
+`docs/designs/zm-brain-v1-context-sync.md` and
+`.project-memory/PROJECT_STATE.md` for current status) — but no
+implementation code exists yet, and Eng Review status on the locked
+design is explicitly **ISSUES_OPEN / NOT CLEAR**: unresolved decisions
+and two critical failure-mode gaps are tracked, not resolved. Do not
+treat this project as further along than "architecture locked,
+build not started, risk tracked."
 
 ---
 
@@ -127,11 +132,13 @@ set): `OKF_Adoption_Mapping.md`, `One_Pager.md`,
 `Company_Brain_Foundational_Reasoning_V4.md` (the CTO/LLM-context
 reasoning trail — **if this conflicts with a canonical document, the
 canonical document wins**; append-only, never edit existing chapters).
-`README.md` also references a `marked_for_technical_architecture.md`
-parking-lot file for items deferred to the next phase — **that file
-does not exist in the repo yet** (verified, not assumed); treat any
-reference to it as aspirational until it's actually created. See
-`README.md` for the full document index with per-document dependency
+`README.md` previously referenced a `marked_for_technical_architecture.md`
+parking-lot file for items deferred to the next phase — **that file was
+never created, and per README's 2026-09-02 update it never will be:
+`TODOS.md` (repo root) is the actual parking lot going forward**, with
+unresolved architecture-level items living in
+`docs/designs/zm-brain-v1-context-sync.md`'s closing sections instead.
+See `README.md` for the full document index with per-document dependency
 order.
 
 Full history of this phase — every intermediate draft, the
@@ -220,9 +227,16 @@ what that skill already provides.
   reference docs.
 - `docs/technical/` — early technical-phase scaffolding (`MVP_Build_
   Plan.md`, `Open_Questions_Technical_Backlog.md`, a GBrain reference
-  note) — **not yet the Technical Architecture phase itself**; read
-  these as pre-work/parking-lot material, not as a started or approved
-  plan.
+  note) — pre-work/parking-lot material written before scope narrowed,
+  not an approved plan; **the actually-started Technical Architecture
+  work supersedes it in scope** (D2C wedge, not the B2B/enterprise build
+  these files describe) — see `docs/designs/` below, not these files,
+  for the current plan.
+- `docs/designs/` — the active Technical Architecture design doc(s),
+  starting with `zm-brain-v1-context-sync.md` (2026-09-02): problem
+  statement, locked v1 architecture decisions, Implementation Tasks
+  T1-T8, failure modes, and unresolved decisions. This is the current
+  build plan; `docs/technical/` above is superseded background.
 - `docs/deck & proposal/` — pitch-deck and proposal materials, not
   architecture — don't treat these as a source of technical fact.
 - `archive/grounding-phase-2026-07/` — full history of the grounding

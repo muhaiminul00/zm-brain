@@ -81,8 +81,10 @@ installed, or asks which memory system to use otherwise, then records the answer
 here so it is never re-asked.
 
 **Memory System:** `project-memory` (plugin installed — auto-recommended per
-above, no question asked). Decided 2026-08-30. Scaffold (`memory-init`) not
-yet run.
+above, no question asked). Decided 2026-08-30. Scaffold in active use as of
+2026-09-02 (`PROJECT_STATE.md`, `Wiki/index.md`, `Wiki/log.md`,
+`Wiki/decisions/` all populated from the Technical Architecture kickoff
+session).
 
 Live-infra handoff safe-gate: Commander/Execute stop for a human pulse-check
 after 5 consecutive Build Cards completed unattended, or any single card that
